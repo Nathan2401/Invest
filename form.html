@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Invest with EnvisionIT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mad.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark ev-dark ev-navbar">
+    <a class="navbar-brand" href="index.html">Invest in EnvisionIT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="form.html">Invest More</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Withdraw</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Download Report</a></li>
+        </ul>
+    </div>  
+</nav>
+
+<section class="ev-form">
+    <div class="container">
+        <form id="madForm">
+            <div class="form-group">
+                <label>Full name</label>
+                <input type="text" class="form-control" placeholder="Enter full name" id="fullname">
+            </div>
+            <div class="form-group">
+                <label>Invest Amount</label>
+                <input type="number" class="form-control" placeholder="Enter amount" id="invest-amount">
+                <small class="form-text text-muted">You own <span class="ev-color" id="ev-color"></span> in EnvisionIT.</small>
+            </div>
+            <div class="form-group">
+                <label>Last Month Revenue</label>
+                <input type="number" class="form-control" placeholder="Enter EnvisionIT revenue" id='last-monthrev'>
+            </div>
+            <div class="form-group">
+                <label>Last Month Expenses</label>
+                <input type="number" class="form-control" placeholder="Enter EnvisionIT expenses" id="last-monthexp">
+            </div>
+            <button type="submit" class="btn btn-success btn-block btn-lg" id="submit-btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+  
+</html>

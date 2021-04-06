@@ -1,0 +1,129 @@
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-light-italic.woff);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-italic.woff);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-medium.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-medium-italic.woff);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-bold-Italic.woff);
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-black.woff);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: mabry;
+    src: url(../fonts/mabry/mabry-black-italic.woff);
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body {
+    font-family: 'mabry', sans-serif;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.ev-color {
+    color: #fa4f68;
+}
+
+.ev-dark {
+    background: #052c3d !important;
+}
+
+.ev-navbar .navbar-toggler, .ev-navbar .navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+.company p, .investor p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.investor-name {
+    margin-bottom: 20px;
+}
+
+.coy-value {
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+    margin-bottom: 15px;
+}
+
+.ev-perc {
+    font-size: 5.5rem;
+    line-height: .95;
+}
+
+.ev-title {
+    text-transform: uppercase;
+}
+
+.annual-gain span {
+    font-size: 1rem;
+    display: block;
+    line-height: .5;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 500px) {
+.hack-right {
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.hack-left {
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+}
