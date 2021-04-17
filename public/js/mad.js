@@ -44,7 +44,7 @@ const getValues = ()=>{
     document.getElementById('amount-percent').textContent = amountPercent;
     document.getElementById('month-profit').textContent = `₦${percentMonthProfit}M`;
     document.getElementById('accrued-profit').textContent = `₦${accruedProfit}M`;
-    document.getElementById('annual-profit').textContent = `₦${annualProfit}M`;
+    document.getElementById('annual-profit').textContent = `₦${annualProfit}`;
     document.getElementById('investment-date').textContent =postDay;
     document.getElementById('maturity-date').textContent = today;
     downloadButton.addEventListener('click',()=>{
