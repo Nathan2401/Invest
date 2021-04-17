@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/mad.css">
 </head>
 <body>
+    <div className="container-fluid">
+
 
 <nav class="navbar navbar-expand-sm navbar-dark ev-dark ev-navbar">
     <a class="navbar-brand" href="index.html">Invest in EnvisionIT</a>
@@ -47,6 +49,107 @@
         </form>
     </div>
 </section>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark ev-dark ev-navbar">
+        <a class="navbar-brand" href="index.html">Invest in EnvisionIT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="form.html">Invest More</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Withdraw</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Download Report</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <section class="company ev-dark text-light">
+        <div class="container">
+            <h6 class="ev-color ev-title">The Company</h6>
+            <div class="coy-value">
+                <p>Company value</p>
+                <h1 id='company-value'>₦112,000,000</h1>
+            </div>
+            <div class="coy-amount">
+                <div class="row">
+                    <div class="col-4">
+                        <p>Last Month Revenue</p>
+                        <h2 id="company-revenue">₦10m</h2>
+                    </div>
+                    <div class="col-4">
+                        <p>Last Month Expenses</p>
+                        <h2 id="company-expense">₦4m</h2>
+                    </div>
+                    <div class="col-4">
+                        <p>Last Month Profit</p>
+                        <h2 id="company-profit">₦6m</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investor">
+        <div class="container">
+            <h6 class="ev-color ev-title">Hi <span class="investor-name" id="full-name">Onisona Emmanuel</span></h6>
+            <div class="inv-amount">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Amount Invested</p>
+                                <h2 id='amount-invested'>₦2,000,000</h2>
+                            </div>
+                            <div class="col-12">
+                                <p>Current Share Worth</p>
+                                <h2 id="percent-worth">₦2,240,000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <p>Your share in EnvisionIT</p>
+                        <h1 class="ev-color ev-perc" id="amount-percent">2%</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-3">
+                        <p>Last Month Profit</p>
+                        <h2 id="month-profit">₦120,000</h2>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <p>Accrued Profit</p>
+                        <h2 id="accrued-profit">₦160,000</h2>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <p>Investment Date</p>
+                        <h4 id='investment-date'>April 1, 2021</h4>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <p>Maturity Date</p>
+                        <h4 id='maturity-date'>April 1, 2022</h4>
+                    </div>
+                </div>
+                <div class="annual-gain">
+                    <p>Appr. Annual Profit</p>
+                    <h1 class="ev-color" id='annual-profit'>₦1,440,000 <span>+ 2% of EnvisionIT retained</span></h1>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 hack-right">
+                        <button type="button" class="btn btn-success btn-block btn-lg">Invest More</button>
+                    </div>
+                    <div class="col-6 col-sm-4 hack-left">
+                        <button type="button" class="btn btn-warning btn-block btn-lg">Withdraw</button>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <button type="button" class="btn btn-info btn-block btn-lg" id="download-btn">Download Report .pdf</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 </body>
 
