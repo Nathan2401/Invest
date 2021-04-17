@@ -22,7 +22,7 @@ const getValues = ()=>{
     
     const accruedProfit = ((defaultProfitBalance + percentMonthProfit)/1000000).toFixed(5);
     
-    const annualProfit = ((percentMonthProfit*12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+    const annualProfit = ((percentMonthProfit*12));
 
     postDay = new Date(Date.now()).toDateString();
     today = new Date().toDateString();
