@@ -18,11 +18,12 @@ const getValues = ()=>{
     lastMonthRevString = lastMonthRev/1000000 ;
     
     
-    percentMonthProfit = ((parseInt(amountPercent)*lastMonthProfit)/1000000).toFixed(5);
+    percentMonthProfitString = ((parseInt(amountPercent)*lastMonthProfit)/1000000).toFixed(5);
+    percentMonthprofitNum = (parseInt(amountPercent)*lastMonthProfit); 
     
     const accruedProfit = ((defaultProfitBalance + percentMonthProfit)/1000000).toFixed(5);
     
-    const annualProfit = ((percentMonthProfit*12));
+    const annualProfit = (percentMonthProfitNum*12).toLocaleString();
 
     postDay = new Date(Date.now()).toDateString();
     today = new Date().toDateString();
@@ -42,7 +43,7 @@ const getValues = ()=>{
     document.getElementById('amount-invested').textContent = `₦${investAmntString}M`;
     document.getElementById('percent-worth').textContent = `₦${percentWorth}M`;
     document.getElementById('amount-percent').textContent = amountPercent;
-    document.getElementById('month-profit').textContent = `₦${percentMonthProfit}M`;
+    document.getElementById('month-profit').textContent = `₦${percentMonthProfitString}M`;
     document.getElementById('accrued-profit').textContent = `₦${accruedProfit}M`;
     document.getElementById('annual-profit').textContent = `₦${annualProfit}`;
     document.getElementById('investment-date').textContent =postDay;
