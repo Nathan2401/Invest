@@ -34,30 +34,82 @@
             </div>
             <div class="form-group">
                 <label>Invest Amount</label>
-                <input type="number" class="form-control" placeholder="Enter amount" id="invest-amount">
+                <input type="text" class="form-control" placeholder="Enter amount" id="invest-amount" class="input-fields">
                 <small class="form-text text-muted">You own <span class="ev-color" id="ev-color"></span> in EnvisionIT.</small>
             </div>
             <div class="form-group">
                 <label>Last Month Revenue</label>
-                <input type="number" class="form-control" placeholder="Enter EnvisionIT revenue" id='last-monthrev'>
+                <input type="text" class="form-control" placeholder="Enter EnvisionIT revenue" id='last-monthrev' class="input-fields">
             </div>
             <div class="form-group">
                 <label>Last Month Expenses</label>
-                <input type="number" class="form-control" placeholder="Enter EnvisionIT expenses" id="last-monthexp">
+                <input type="text" class="form-control" placeholder="Enter EnvisionIT expenses" id="last-monthexp">
             </div>
             <button type="submit" class="btn btn-success btn-block btn-lg" id="submit-btn">Submit</button>
         </form>
     </div>
 </section>
 
-<a href="view.html">Go To View Page</a>
-    
 
-</body>
+<a href="view.html">Go To View Page</a>
+
+
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/simple-mask-money.js"></script>
+<script>
+ let inputAmnt = SimpleMaskMoney.setMask('#invest-amount',{
+    prefix: '',
+    suffix: '',
+    fixed: true,
+    fractionDigits: 0,
+    decimalSeparator: ',',
+    thousandsSeparator: ',',
+    emptyOrInvalid: () => {
+      return this.SimpleMaskMoney.args.fixed
+        ? `0${this.SimpleMaskMoney.args.decimalSeparator}00`
+        : `_${this.SimpleMaskMoney.args.decimalSeparator}__`;
+    }
+});
+
+let inputRev = SimpleMaskMoney.setMask('#last-monthrev',{
+    prefix: '',
+    suffix: '',
+    fixed: true,
+    fractionDigits: 0,
+    decimalSeparator: ',',
+    thousandsSeparator: ',',
+    emptyOrInvalid: () => {
+      return this.SimpleMaskMoney.args.fixed
+        ? `0${this.SimpleMaskMoney.args.decimalSeparator}00`
+        : `_${this.SimpleMaskMoney.args.decimalSeparator}__`;
+    }
+});
+
+let inputExp = SimpleMaskMoney.setMask('#last-monthexp',{
+    prefix: '',
+    suffix: '',
+    fixed: true,
+    fractionDigits: 0,
+    decimalSeparator: ',',
+    thousandsSeparator: ',',
+    emptyOrInvalid: () => {
+      return this.SimpleMaskMoney.args.fixed
+        ? `0${this.SimpleMaskMoney.args.decimalSeparator}00`
+        : `_${this.SimpleMaskMoney.args.decimalSeparator}__`;
+    }
+});
+
+</script>
+<!--<script src="js/stack.js"></script>-->
+    
+
+</body>
+
+
   
 </html>
